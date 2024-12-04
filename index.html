@@ -1,17 +1,13 @@
-<!DOCTYPE html>
 <html lang="en-CA">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Webpage</title>
+    <title>Personal Website</title>
     <link rel="stylesheet" href="https://use.typekit.net/atg3vfc.css">
+
     <style>
-        /* General Body Styles */
+        /* General Styles */
         body {
-           background-color: #aed1e3;
             font-family: "futura-pt", sans-serif;
-            margin: 0;
-            padding: 0;
         }
 
         /* Header Styles */
@@ -22,23 +18,25 @@
 
         .header img {
             width: 500px; /* Set the width of the image */
-            height: auto; /* Keep the aspect ratio */
-            margin-left: 100px; /* Moves the image to the right */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0 100px 0 700px; /* Center the image */
+            display: block; /* Ensures centering */
         }
 
-        /* Navbar Section */
+        /* Navbar Styles */
         .topnav {
             display: flex; /* Use flexbox for horizontal layout */
             background-color: #aed1e3; /* Dark blue */
+            overflow: hidden;
         }
 
         .topnav a {
-            flex: 1; /* Allow the links to grow and fill the space */
             color: #493a2d; /* Brown */
             text-align: center;
             padding: 10px;
             font-size: 25px;
             text-decoration: none;
+            flex: 1; /* Distribute links evenly */
             font-weight: bold; /* Make the text bold */
         }
 
@@ -47,113 +45,103 @@
             color: #493a2d; /* Brown */
         }
 
-        /* Section Styles */
-        .section {
-            background-color: #e2f1fb; /* Light blue */
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            display: flex; /* Flexbox for layout */
-            align-items: center;
+        /* Footer Styles */
+        .footer {
+            background-color: #007BFF; /* Blue */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
 
-        .section img {
-            width: 650px; /* Set default image width */
-            height: auto; /* Maintain aspect ratio */
-            margin-right: 100px; /* Space between image and text */
+        /* Section Styles */
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white; /* White background for sections */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .section h2 {
-            margin: 0;
-            color: #493a2d; /* Text color */
-            font-size: 130px;
+            text-align: center;
+            color: #007BFF; /* Blue */
+        }
+
+        /* Grid layout for images */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 10px; /* Space between images */
+            margin: 20px 0;
+        }
+
+        .photo-grid img {
+            width: 100%; /* Responsive width for images */
+            border-radius: 5px;
         }
 
         .section p {
-            color: #493a2d; /* Text color */
-            font-size: 30px; /* Font size */
-        }
-
-        /* Footer Section */
-        .footer {
-            background-color: #e2f1fb;
-            padding: 10px;
             text-align: center;
+            font-size: 16px;
         }
     </style>
 </head>
-<body>
+</head>
 
+<body>
     <!-- Header Section -->
     <div class="header">
-        <img src="port-folio.png" alt="Portfolio Image">
+        <img src="port-folio.png" alt="Portfolio">
     </div>
-  
+
     <!-- Navbar Section -->
     <div class="topnav">
         <a href="#">PHYSICAL ART</a>
         <a href="#">DIGITAL ART</a>
         <a href="#">MARKETING</a>
     </div>
-
     <!-- First Section -->
     <div class="section">
-        <img src="font.png" alt="Description of Image 1">
-        <div>
-            <h2>TYPEFACE</h2>
-            <p>Media: Digital <br>
-               Made on Procreate <br>
-               2160 px x 2160 px<br>
-               Completed: 10/23/22</p>
+        <h2>Section One</h2>
+        <div class="photo-grid">
+            <img src="photo1.jpg" alt="Photo 1">
+            <img src="photo2.jpg" alt="Photo 2">
+            <img src="photo3.jpg" alt="Photo 3">
+            <img src="photo4.jpg" alt="Photo 4">
         </div>
+        <p>This is the body text for section one. It provides information and context about the images displayed above.</p>
     </div>
 
     <!-- Second Section -->
     <div class="section">
-        <img src="face.png" alt="Description of Image 2">
-        <div>
-            <h2>CHARACTER</h2>
-            <p>Character design<br>
-               Media: Digital <br>
-               Made on Procreate <br>
-               Dimensions: 2160 px x 1620 px<br>
-               Completed: 08/05/23<br>
-            </p>
+        <h2>Section Two</h2>
+        <div class="photo-grid">
+            <img src="photo5.jpg" alt="Photo 5">
+            <img src="photo6.jpg" alt="Photo 6">
+            <img src="photo7.jpg" alt="Photo 7">
+            <img src="photo8.jpg" alt="Photo 8">
         </div>
+        <p>This is the body text for section two. Here you can discuss the significance of these images and their relevance.</p>
     </div>
 
     <!-- Third Section -->
     <div class="section">
-        <img src="story.png" alt="Description of Image 3">
-        <div>
-            <h2>STORY</h2>
-            <p>Story Illustration<br>
-               Media: Digital <br>
-               Made on Procreate and Photoshop <br>
-               Completed: 12/01/24 <br>
-               <a href="https://1drv.ms/b/s!AqGJekA5Dku3gZ5SBvhzvz9k6oIduw?e=X4olPo">View Here</a>
-            </p>
+        <h2>Section Three</h2>
+        <div class="photo-grid">
+            <img src="photo9.jpg" alt="Photo 9">
+            <img src="photo10.jpg" alt="Photo 10">
+            <img src="photo11.jpg" alt="Photo 11">
+            <img src="photo12.jpg" alt="Photo 12">
         </div>
-    </div>
-
-    <!-- Fourth Section -->
-    <div class="section">
-        <img src="Screenshot 2024-12-04 at 3.08.46 PM.png" alt="Description of Image 4"> <!-- Replace with your image source -->
-        <div>
-            <h2>WALKCYCLE</h2>
-            <p>Character Animation<br>
-               Media: Digital <br>
-               Made on After Effects <br>
-               Completed: 09/05/23 <br>
-               <a href="https://www.youtube.com/shorts/yIJ7zCNrOiM">View Here</a>
-            </p>
-        </div>
+        <p>This is the body text for section three. Use this space to elaborate on the themes represented by the images.</p>
     </div>
 
     <!-- Footer Section -->
     <div class="footer">
-        <!-- Footer content can be added here -->
+        <p>Footer Content © 2024</p>
     </div>
 
 </body>
